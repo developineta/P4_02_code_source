@@ -685,7 +685,10 @@ p {
 }
 blockquote {
 	margin-bottom: 0;
+	margin-inline-start: 40px;
+	margin-inline-end: 40px;
 	padding: 10px 20px 0px 20px;
+	border-left: none;
 }
 blockquote p {
 	font-size: 20px;
