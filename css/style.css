@@ -14,8 +14,10 @@ button {
 a {
 	color: #fff !important;
 }
-a:hover {
-	text-decoration: none;
+a:hover,
+a:focus {
+	color: #000000 !important;
+	text-decoration: underline !important;
 	cursor: pointer;
 }
 #page-loading-blocs-notifaction {
@@ -258,6 +260,10 @@ a:hover {
 	font-weight: 600;
 	line-height: 44px;
 }
+.navbar-brand:hover,
+.navbar-brand:focus {
+	box-shadow: 2px 2px 2px #575757;
+}
 .navbar-brand img {
 	max-height: 200px;
 	margin: 0 5px 0 0;
@@ -307,46 +313,6 @@ a:hover {
 	float: right;
 	position: relative;
 	z-index: 2;
-}
-@media (min-width: 768px) {
-	.site-navigation {
-		position: absolute;
-		top: 50%;
-		right: 20px;
-		transform: translate(0, -50%);
-		-webkit-transform: translateY(-50%);
-	}
-	.nav > li .dropdown-menu a,
-	.nav > li .dropdown-menu a:hover {
-		color: #484848;
-	}
-	.nav-invert .site-navigation {
-		left: 0;
-		right: 0;
-	}
-	.nav-center {
-		text-align: center;
-	}
-	.nav-center .navbar-header {
-		width: 100%;
-	}
-	.nav-center .nav > li,
-	.nav-center .navbar-brand,
-	.nav-center .navbar-header {
-		float: none;
-		display: inline-block;
-	}
-	.nav-center .site-navigation {
-		position: relative;
-		width: 100%;
-		right: 0;
-		margin-right: 0;
-		margin-top: 20px;
-	}
-	.nav-center.mini-nav .navbar-toggle {
-		float: none;
-		margin: 10px auto 0;
-	}
 }
 .nav > li > .dropdown a {
 	background: 0 0 !important;
@@ -412,8 +378,10 @@ button {
 	font-size: 30px !important;
 	color: #c1c1c1 !important;
 }
-.icon-md:hover {
+.icon-md:hover,
+.icon-md:focus {
 	color: #fff !important;
+	text-decoration: underline;
 }
 .icon-lg {
 	font-size: 60px !important;
@@ -438,6 +406,10 @@ button {
 .form-control {
 	border-color: rgba(0, 0, 0, 0.1);
 	box-shadow: none;
+}
+input:focus,
+textarea:focus {
+	background-color: #efefef;
 }
 .scrollToTop {
 	width: 40px;
@@ -570,7 +542,8 @@ p {
 footer a {
 	color: #fff !important;
 }
-footer a:hover {
+footer a:hover,
+footer a:focus {
 	color: #c1c1c1 !important;
 }
 .container {
@@ -659,6 +632,7 @@ h4 {
 }
 .portfolio-thumb {
 	margin-bottom: 24px;
+	max-width: 270px;
 }
 .portfolio-row {
 	margin-bottom: 44px;
@@ -673,7 +647,10 @@ h4 {
 }
 .bold-link {
 	font-weight: 900;
-	text-decoration: underline !important;
+}
+.bold-link:hover,
+.bold-link:focus {
+	color: #c1c1c1;
 }
 .bgc-white {
 	background-color: #fff;
@@ -691,9 +668,11 @@ h4 {
 	background: #d87c51;
 	color: #fff !important;
 }
-.btn-atomic-tangerine:hover {
+.btn-atomic-tangerine:hover,
+.btn-atomic-tangerine:focus {
 	background: #983c11 !important;
 	color: #fff !important;
+	text-decoration: underline;
 }
 .ltc-white {
 	color: #fff !important;
@@ -745,6 +724,46 @@ h4 {
 	}
 	.nav-center.navbar .nav {
 		max-width: 100%;
+	}
+}
+@media (min-width: 768px) {
+	.site-navigation {
+		position: absolute;
+		top: 50%;
+		right: 20px;
+		transform: translate(0, -50%);
+		-webkit-transform: translateY(-50%);
+	}
+	.nav > li .dropdown-menu a,
+	.nav > li .dropdown-menu a:hover {
+		color: #484848;
+	}
+	.nav-invert .site-navigation {
+		left: 0;
+		right: 0;
+	}
+	.nav-center {
+		text-align: center;
+	}
+	.nav-center .navbar-header {
+		width: 100%;
+	}
+	.nav-center .nav > li,
+	.nav-center .navbar-brand,
+	.nav-center .navbar-header {
+		float: none;
+		display: inline-block;
+	}
+	.nav-center .site-navigation {
+		position: relative;
+		width: 100%;
+		right: 0;
+		margin-right: 0;
+		margin-top: 20px;
+	}
+	.nav-center.mini-nav .navbar-toggle {
+		float: none;
+		margin: 10px auto 0;
 	}
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
@@ -800,6 +819,9 @@ h4 {
 	p {
 		padding-left: 10px !important;
 		padding-right: 10px !important;
+	}
+	.bloc-mob-center-text {
+		text-align: center;
 	}
 	.b-parallax {
 		background-attachment: scroll;
@@ -878,6 +900,11 @@ h4 {
 	.bloc-xxl {
 		padding: 40px 0;
 	}
+	.col-sm-6 a {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 	.bloc-md,
 	.bloc-sm {
 		padding-left: 0;
@@ -905,6 +932,12 @@ h4 {
 	}
 	.voffset-lg {
 		margin-top: 30px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.col-sm-4 {
+		max-width: 300px;
 	}
 	form {
 		padding: 5px;
@@ -927,10 +960,5 @@ h4 {
 	.bloc {
 		padding-left: 0;
 		padding-right: 0;
-	}
-}
-@media (max-width: 767px) {
-	.bloc-mob-center-text {
-		text-align: center;
 	}
 }
