@@ -721,7 +721,7 @@ h4 {
 		padding-right: 0;
 	}
 }
-@media (max-width: 992px) and (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 992px) {
 	.navbar .nav {
 		max-width: 80%;
 	}
@@ -767,6 +767,10 @@ h4 {
 	.nav-center.mini-nav .navbar-toggle {
 		float: none;
 		margin: 10px auto 0;
+	}
+	#bloc-7 .row {
+		display: flex;
+		flex-direction: column;
 	}
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
