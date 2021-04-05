@@ -260,10 +260,6 @@ a:focus {
 	font-weight: 600;
 	line-height: 44px;
 }
-.navbar-brand:hover,
-.navbar-brand:focus {
-	box-shadow: 2px 2px 2px #575757;
-}
 .navbar-brand img {
 	max-height: 200px;
 	margin: 0 5px 0 0;
@@ -274,6 +270,10 @@ a:focus {
 }
 .nav-center .navbar-brand img {
 	margin: 0;
+}
+.navbar-header a:hover,
+.navbar-header a:focus {
+	box-shadow: 2px 2px 2px #575757;
 }
 .navbar .nav {
 	padding-top: 2px;
