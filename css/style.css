@@ -32,7 +32,7 @@ a:focus {
 	width: 100%;
 	clear: both;
 	background: 50% 50% no-repeat;
-	padding: 0 50px;
+	padding: 0 0;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -381,7 +381,7 @@ button {
 .icon-md:hover,
 .icon-md:focus {
 	color: #fff !important;
-	text-decoration: underline;
+	border-left: 2px #c1c1c1 solid;
 }
 .icon-lg {
 	font-size: 60px !important;
@@ -568,7 +568,7 @@ footer a:focus {
 	margin: auto auto auto auto;
 }
 p {
-	font-size: 11px;
+	font-size: 14px;
 }
 blockquote {
 	margin-bottom: 0;
@@ -603,7 +603,7 @@ cite {
 }
 .social {
 	max-width: 400px;
-	margin: auto auto auto auto;
+	margin: 25px auto 25px auto;
 }
 h2 {
 	font-size: 22px;
@@ -704,12 +704,18 @@ h4 {
 }
 .bg-banniere--end {
 	background-image: url(../img/la-chouette-agence-banniere-end.jpg);
+	max-width: 1920px;
+	margin: auto;
 }
 .bg-presentation {
 	background-image: url(../img/image-de-presentation.jpg);
 }
 @media (max-width: 1024px) {
-	.bloc {
+	#bloc-0,
+	#bloc-1-hero,
+	#bloc-2-services,
+	#bloc-3-what-i-do,
+	#bloc-4-portfolio {
 		padding-left: 20px;
 		padding-right: 20px;
 	}
@@ -768,7 +774,7 @@ h4 {
 		float: none;
 		margin: 10px auto 0;
 	}
-	#bloc-7 .row {
+	#bloc-7 .container .row {
 		display: flex;
 		flex-direction: column;
 	}
@@ -826,6 +832,13 @@ h4 {
 	p {
 		padding-left: 10px !important;
 		padding-right: 10px !important;
+	}
+	#bloc-2-services h2 {
+		width: 70%;
+	}
+	#bloc-2-services .row {
+		display: flex;
+		justify-content: center;
 	}
 	.col-sm-6 .email {
 		display: block;
@@ -971,5 +984,13 @@ h4 {
 	.bloc {
 		padding-left: 0;
 		padding-right: 0;
+	}
+	#bloc-8 h2 {
+		width: 70%;
+	}
+	#bloc-8 .row-heading {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
 }
