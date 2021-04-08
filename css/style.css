@@ -381,7 +381,7 @@ button {
 .icon-md:hover,
 .icon-md:focus {
 	color: #fff !important;
-	border-left: 2px #c1c1c1 solid;
+	border-bottom: 2px #ffffff solid;
 }
 .icon-lg {
 	font-size: 60px !important;
@@ -549,6 +549,24 @@ footer a:hover,
 footer a:focus {
 	color: #c1c1c1 !important;
 }
+footer .col-sm-4 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+footer ul {
+	list-style-type: none;
+	font-size: 16px;
+	line-height: 200%;
+}
+.row-footer {
+	display: flex;
+	justify-content: center;
+}
+.row-footer span {
+	font-size: 16px;
+	line-height: 200%;
+}
 .container {
 	max-width: 1000px;
 }
@@ -603,6 +621,7 @@ cite {
 }
 .social {
 	max-width: 400px;
+	height: 30px;
 	margin: 25px auto 25px auto;
 }
 h2 {
@@ -978,6 +997,9 @@ h4 {
 	.blocsapp-device-iphone5 img {
 		width: 180px;
 		height: 320px;
+	}
+	.social {
+		height: 120px;
 	}
 }
 @media (max-width: 400px) {
