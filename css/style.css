@@ -378,8 +378,8 @@ button {
 	font-size: 30px !important;
 	color: #c1c1c1 !important;
 }
-.icon-md:hover,
-.icon-md:focus {
+.d-bloc a:hover .icon-md,
+.d-bloc a:focus .icon-md {
 	color: #fff !important;
 	border-bottom: 2px #ffffff solid;
 }
@@ -542,12 +542,16 @@ p {
 .col-sm-6 a {
 	font-size: 11px;
 }
+.col-sm-6 a:focus {
+	border: 1px #000000 solid;
+}
 footer a {
 	color: #fff !important;
 }
 footer a:hover,
 footer a:focus {
 	color: #c1c1c1 !important;
+	text-decoration: underline !important;
 }
 footer .col-sm-4 {
 	display: flex;
@@ -616,7 +620,7 @@ cite {
 	color: #fff !important;
 	text-transform: uppercase;
 	padding: 12px 28px 12px 28px;
-	font-size: 16px;
+	font-size: 18px;
 	font-weight: 700;
 }
 .social {
@@ -684,7 +688,7 @@ h4 {
 	background-color: #333;
 }
 .tc-white {
-	color: #fff !important;
+	color: #ffffff !important;
 }
 .btn-atomic-tangerine {
 	background: #d87c51;
